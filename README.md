@@ -33,23 +33,23 @@ Notes:
 Opcodes: wow, such, add, sub, so, very, much, lvl
 
 type 1 (wow, lvl): 
-  bits 15 - 13: opcode
-  bits 12 - 0: unused, all zero
+ - bits 15 - 13: opcode
+ - bits 12 - 0: unused, all zero
   
 type 2 (so, very, such):
-  bits 15 - 13: opcode
-  bit 12: unused, zero
-  bits 11 - 0: immediate value
+ - bits 15 - 13: opcode
+ - bit 12: unused, zero
+ - bits 11 - 0: immediate value
   
 type 3 (much):
-  bits 15 - 13: opcode
-  bits 12 - 3: unused, all zero
-  bits 2 - 0: register
+ - bits 15 - 13: opcode
+ - bits 12 - 3: unused, all zero
+ - bits 2 - 0: register
   
 type 4 (add, sub):
-  bits 15 - 13: opcode
-  bit 12: 1 is arg is an immediate, 0 if arg is a register
-  bits 11 - 0: either immediate value or register
+ - bits 15 - 13: opcode
+ - bit 12: 1 is arg is an immediate, 0 if arg is a register
+ - bits 11 - 0: either immediate value or register
   
   
 wow, 000:
@@ -62,12 +62,12 @@ such <immediate>, 001:
  - compares value in accumulator with value immediate in memory,
    jumps to wow accordingly
  - EXAMPLE:
-     wow       // such jumps here if ACC < MEM[5]
-     ...
-     such #5
-     lvl       // runs here if ACC == MEM[5]
-     ...
-     wow       // sucj jumos here if ACC > MEM[5]
+    - wow       // such jumps here if ACC < MEM[5]
+    - ...
+    - such #5
+    - lvl       // runs here if ACC == MEM[5]
+    - ...
+    - wow       // sucj jumos here if ACC > MEM[5]
 
 so <immediate>, 100:
  - loads value of immediate location into accumulator
