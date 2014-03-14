@@ -167,7 +167,6 @@ run(stateType state)
             printf("error: illegal opcode 0x%x\n", opcode);
             exit(1);
         }
-        state.reg[0] = 0;
     }
 }
 

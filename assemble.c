@@ -77,16 +77,6 @@ main(int argc, char *argv[])
             exit(1);
         }
         
-        /* check register fields */
-        if (!strcmp(opcode, "much")) {
-            testRegArg(arg);
-        }
-        
-        if (!strcmp(opcode, "such") || !strcmp(opcode, "so")
-            || !strcmp(opcode, "very") ) {
-            testAddrArg(arg);
-        }
-        
     }
     
     /* now do second pass (print machine code, with symbols filled in as

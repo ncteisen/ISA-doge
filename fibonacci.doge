@@ -1,0 +1,20 @@
+.fill 0     <<-- always zero
+.fill 1     <<-- always 1
+.fill 21    <<-- number to check goes here
+so #1
+wow
+much 0
+add 0
+much 1
+so #1
+add 2
+much 2
+so #0
+much 1
+such #2
+much 2
+lvl
+wow
+so #1
+sub #1
+lvl
