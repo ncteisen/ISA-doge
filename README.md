@@ -17,14 +17,14 @@ and memory at each step
 
 //////////////////////////   Directions   ////////////////////////////////////
 
-1. write your code in ISA doge into a file. Lets call it test.doge
+1. write your code in ISA doge into a file. Let's call it test.doge
 2. run ./assemble test.doge test.mc to convert your doge to machine code
 3. run ./simulate test.mc to simulate your code
 
 Notes:
   - error checking is imperfect, so make sure your code is valid
   - to simulate memory, use .fill at the TOP of your program
-  - link to the memory w immidiates that you calculate youself
+  - link to the memory with immediates that you calculate youself
   
 
 
